@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Магазин (БЭМ версия)</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-text">Темная тема</span>
+    </button>
+
+    <div class="page-container">
+        <div class="header">Каталог товаров</div>
+
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index_v1.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods_v1.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1 class="section-title">Наши товары</h1>
+
+            <div class="goods-container">
+                <div class="goods-card">
+                    <img src="images/goods1.jpg" alt="Товар 1" class="goods-image">
+                    <h3 class="goods-title">Товар 1</h3>
+                    <p class="goods-price">Цена: 1 000 руб.</p>
+                </div>
+
+                <div class="goods-card">
+                    <img src="images/goods2.jpg" alt="Товар 2" class="goods-image">
+                    <h3 class="goods-title">Товар 2</h3>
+                    <p class="goods-price">Цена: 2 500 руб.</p>
+                </div>
+
+                <div class="goods-card">
+                    <img src="images/goods3.jpg" alt="Товар 3" class="goods-image">
+                    <h3 class="goods-title">Товар 3</h3>
+                    <p class="goods-price">Цена: 1 800 руб.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">© 2025 Семестровая работа. Все права защищены.</div>
+    </div>
+
+    <script>
+        // Переключение темы
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        const themeText = themeToggle.querySelector('.theme-text');
+
+        // Проверяем сохраненную тему
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.body.setAttribute('data-theme', savedTheme);
+        updateThemeButton(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            document.body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        });
+
+        function updateThemeButton(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Светлая тема';
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Темная тема';
+            }
+        }
+    </script>
+</body>
+</html>

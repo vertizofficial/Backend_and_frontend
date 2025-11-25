@@ -73,12 +73,16 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Img\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="index_v1.html" />
     <Content Include="pages\contacts.html" />
     <Content Include="pages\goods.html" />
+    <Content Include="pages\goods_v1.html" />
+    <Content Include="pages\news.html" />
     <Content Include="pages\practices.html" />
     <Content Include="style\styles.css" />
   </ItemGroup>

@@ -8,40 +8,63 @@
 </head>
 <body>
     <div class="page-container">
-        <div class="header">Практические занятия</div>
+        <div class="header">Практические работы</div>
 
-        <div class="nav">
+        <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link active" href="practices.html">Практики</a></li>
                 <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="content">
-            <h1 class="section-title">Практические работы</h1>
+        <main class="content">
+            <h1 class="section-title">Практические занятия</h1>
 
             <div class="practices-container">
-                <div class="practice-card">
-                    <h3>Практика 1: Основы HTML</h3>
-                    <p>Изучение базовой структуры HTML документа</p>
-                </div>
+                <article class="practice-card">
+                    <h3 class="practice-title">Практика 1: Основы HTML</h3>
+                    <p class="practice-desc">Создание базовой структуры HTML-документа. Работа с тегами и атрибутами.</p>
+                    <span class="practice-status completed">Завершено</span>
+                </article>
 
-                <div class="practice-card">
-                    <h3>Практика 2: Основы CSS</h3>
-                    <p>Работа с каскадными таблицами стилей</p>
-                </div>
+                <article class="practice-card">
+                    <h3 class="practice-title">Практика 2: CSS стилизация</h3>
+                    <p class="practice-desc">Изучение каскадных таблиц стилей. Работа с классами и селекторами.</p>
+                    <span class="practice-status completed">Завершено</span>
+                </article>
 
-                <div class="practice-card">
-                    <h3>Практика 3: JavaScript основы</h3>
-                    <p>Введение в программирование на JavaScript</p>
-                </div>
+                <article class="practice-card">
+                    <h3 class="practice-title">Практика 3: JavaScript основы</h3>
+                    <p class="practice-desc">Введение в JavaScript. Переменные, функции, обработка событий.</p>
+                    <span class="practice-status in-progress">В процессе</span>
+                </article>
+
+                <article class="practice-card">
+                    <h3 class="practice-title">Практика 4: React разработка</h3>
+                    <p class="practice-desc">Создание компонентов React. Работа с состоянием и пропсами.</p>
+                    <span class="practice-status pending">Ожидает</span>
+                </article>
+
+                <article class="practice-card">
+                    <h3 class="practice-title">Практика 5: Node.js сервер</h3>
+                    <p class="practice-desc">Разработка backend на Node.js. Создание REST API.</p>
+                    <span class="practice-status pending">Ожидает</span>
+                </article>
+
+                <article class="practice-card">
+                    <h3 class="practice-title">Практика 6: Базы данных</h3>
+                    <p class="practice-desc">Работа с MongoDB и SQL базами данных. Создание моделей данных.</p>
+                    <span class="practice-status pending">Ожидает</span>
+                </article>
             </div>
-        </div>
+        </main>
 
-        <div class="footer">© 2025 Семестровая работа. Все права защищены.</div>
+        <footer class="footer">
+            <p>&copy; 2025 Все права защищены.</p>
+        </footer>
     </div>
 </body>
 </html>

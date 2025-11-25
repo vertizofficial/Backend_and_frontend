@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Портфолио (БЭМ версия)</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">Моё портфолио</h1>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-toggle__icon">🌙</span>
+                    <span class="theme-toggle__text">Темная тема</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="index_v1.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="goods_v1.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <!-- Профиль -->
+            <section class="profile">
+                <div class="profile__card">
+                    <img class="profile__photo" src="images/photo.png" alt="Фото студента">
+                    <div class="profile__info">
+                        <h2 class="profile__name">Иванов Иван Иванович</h2>
+                        <p class="profile__group">ЭФБО-00-00</p>
+                        <p class="profile__description">Студент веб-разработки</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Обо мне -->
+            <section class="about">
+                <h2 class="about__title">Обо мне</h2>
+                <div class="about__content">
+                    <p class="about__text">
+                        Я родился в Москве в 70-м на краю города. Глупость рано ударила в голову.
+                        В четыре активно ругался. Потом школа, форма, драки, клей.
+                        Так я становился сильней. Воровал деньги в раздевалке.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Навыки -->
+            <section class="skills">
+                <h2 class="skills__title">Мои навыки</h2>
+                <div class="skills__grid">
+                    <div class="skill skill--html">
+                        <span class="skill__name">HTML/CSS</span>
+                        <div class="skill__level" data-level="90%"></div>
+                    </div>
+                    <div class="skill skill--css">
+                        <span class="skill__name">JavaScript</span>
+                        <div class="skill__level" data-level="75%"></div>
+                    </div>
+                    <div class="skill skill--js">
+                        <span class="skill__name">Bootstrap</span>
+                        <div class="skill__level" data-level="85%"></div>
+                    </div>
+                    <div class="skill skill--react">
+                        <span class="skill__name">React</span>
+                        <div class="skill__level" data-level="70%"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Опыт работы -->
+            <section class="experience">
+                <h2 class="experience__title">Мой опыт работы</h2>
+                <div class="experience__grid">
+                    <article class="experience-card">
+                        <h3 class="experience-card__title">Опыт 1</h3>
+                        <p class="experience-card__description">Работал фантазёром. Сочинял и праздновал.</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-card__title">Опыт 2</h3>
+                        <p class="experience-card__description">Работал воровством. Воровал и продавал.</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-card__title">Опыт 3</h3>
+                        <p class="experience-card__description">Работал panepom. Читал и пел.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Проекты -->
+            <section class="projects">
+                <h2 class="projects__title">Мои проекты</h2>
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <h3 class="project-card__title">Личный сайт</h3>
+                        <p class="project-card__description">Сайт-портфолио на HTML, CSS и Bootstrap с адаптивным дизайном.</p>
+                        <div class="project-card__tags">
+                            <span class="tag tag--html">HTML</span>
+                            <span class="tag tag--css">CSS</span>
+                            <span class="tag tag--bootstrap">Bootstrap</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3 class="project-card__title">Тодо приложение</h3>
+                        <p class="project-card__description">Приложение для управления задачами с использованием JavaScript.</p>
+                        <div class="project-card__tags">
+                            <span class="tag tag--js">JavaScript</span>
+                            <span class="tag tag--storage">LocalStorage</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3 class="project-card__title">Интернет-магазин</h3>
+                        <p class="project-card__description">Прототип интернет-магазина с корзиной товаров и фильтрацией.</p>
+                        <div class="project-card__tags">
+                            <span class="tag tag--react">React</span>
+                            <span class="tag tag--api">API</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="footer__content">
+                <p class="footer__text">&copy; 2025 Портфолио студента. Все права защищены.</p>
+                <div class="footer__links">
+                    <a href="pages/contacts.html" class="footer__link">Контакты</a>
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Переключение темы
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('.theme-toggle__icon');
+        const themeText = themeToggle.querySelector('.theme-toggle__text');
+
+        // Проверяем сохраненную тему
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.body.setAttribute('data-theme', savedTheme);
+        updateThemeButton(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            document.body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        });
+
+        function updateThemeButton(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Светлая тема';
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Темная тема';
+            }
+        }
+    </script>
+</body>
+</html>
